@@ -22,3 +22,7 @@ img{
   border: 1px solid black;
   margin-top: 2%;
 }
+
+img:hover{
+  border: 1px solid white;
+}
