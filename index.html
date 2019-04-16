@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SQL</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="title">
+      SQL INNER JOIN
+    </div>
+    <ul>
+      <li><div class="Ltitle">
+        What is INNER JOIN:
+      </div>
+        There are several different types of JOINs in SQL.
+        <ul>
+          <li>INNER JOIN</li>
+          <li>LEFT JOIN</li>
+          <li>RIGHT JOIN</li>
+          <li>FULL OUTER JOIN</li>
+        </ul>
+      INNER JOIN selects all rows from two (or more) participating tables until there is
+      no match between the columns.</li>
+      <li><div class="Ltitle">
+        Syntax:
+      </div>
+        SELECT * <br>
+        FROM table1 <br>
+        INNER JOIN table2 <br>
+        ON table1.column_name = table2.column_name;</li>
+      <li><div class="Ltitle">
+        How does INNER JOIN work:
+      </div>
+        The INNER JOIN gets a certain field name and finds it in two (or more) tables
+        using comparison operator. In other words, we will give a search condition, and
+        INNER JOIN will return what satisfy our search condition.</li>
+      <li><div class="Ltitle">
+        Example:
+      </div>
+      There are two tables, "Orders" and "Customers". We can only see customer ID from the
+      first table and customers' information from the second table. If we want to match
+      the order ID and its correspoding customer's information, we can use INNER JOIN by
+      using "CustomerID" as the search condition because it is the only common field that
+      appears in both tables.
+      <img src="Orders.PNG" alt="Orders" width="600" height="260">
+      <img src="Customers.PNG" alt="Customers" width="600" height="320"><br>
+      SELECT o.OrderID, o.CustomerID, c.CustomerName, c.Address, c.City, c.Country<br>
+      FROM Orders AS o<br>
+      INNER JOIN Customers AS c<br>
+      ON o.CustomerID = c.CustomerID
+      <img src="Result.PNG" alt="Result" width="600" height="340"></li>
+    </ul>
+
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+body{
+  background-color: #DFBBB1;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.Ltitle{
+  font-weight: bold;
+}
+
+img{
+  border: 1px solid black;
+  margin-top: 2%;
+}
